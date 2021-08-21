@@ -43,7 +43,7 @@
               <a class="site-nav-link" href="./index.html">Студия</a>
             </li>
             <li class="site-nav-item">
-              <a class="site-nav-link active" href="./portfolio.html">Портфолио</a>
+              <a class="site-nav__link current" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="site-nav-item">
               <a class="site-nav-link" href="">Контакты</a>
@@ -313,24 +313,26 @@
         <!-- Feedback -->
 
         <div class="box">
-          <b class="subscribe">подпишитесь на рассылку</b>
-          <form class="footer-form">
-            <label for="mail" class="mail-label"></label>
-            <input
-              type="email"
-              name="mail"
-              placeholder="E-mail"
-              id="mail"
-              class="mail-text"
-              autocomplete="on"
-            />
+          <p class="subscribe">подпишитесь на рассылку</p>
+          <div class="send">
+            <form class="footer-form">
+              <label for="mail-subscribe" class="mail-label"></label>
+              <input
+                type="email"
+                name="mail"
+                placeholder="E-mail"
+                id="mail-subscribe"
+                class="mail-text"
+                autocomplete="on"
+              />
+            </form>
             <button type="submit" class="button button-icon">
-              <span class="#">Подписяться</span>
+              <span class="#">Подписаться</span>
               <svg class="logo-icon" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-icon-send"></use>
               </svg>
             </button>
-          </form>
+          </div>
         </div>
       </div>
     </footer>
