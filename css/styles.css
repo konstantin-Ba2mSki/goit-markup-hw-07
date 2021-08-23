@@ -47,10 +47,6 @@ body {
 
 /* logo */
 
-.page-header {
-  border-bottom: 1px solid #ececec;
-}
-
 .logo-img {
   color: var(--logo-color);
   font-family: var(--secondary-font);
@@ -75,12 +71,11 @@ body {
 
 /* main-nav */
 
-.main-nav {
-  display: flex;
-  align-items: center;
+.page-header {
+  border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.container--page__header {
   align-items: center;
   display: flex;
 }
@@ -91,6 +86,11 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 /* navbar */
@@ -282,7 +282,7 @@ body {
 
 /* section2 */
 
-.section__floor {
+.section--box {
   background-color: var(--bg-color);
 }
 
@@ -483,7 +483,7 @@ p.works__label {
   color: var(--accent-color);
 }
 
-.footer__container {
+.container--footer {
   display: flex;
   align-items: baseline;
 }
