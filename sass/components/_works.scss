@@ -11,23 +11,23 @@
   padding-top: 0;
 }
 
+.work__title {
+  color: $title-text-color;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .works {
   display: flex;
   justify-content: space-between;
 
-  &__title {
-    color: $title-text-color;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.16;
-    text-align: center;
-    margin-bottom: 50px;
+  &__item {
+    position: relative;
+    list-style: none;
   }
-}
-
-.works__item {
-  position: relative;
-  list-style: none;
 }
 
 p.works__label {
