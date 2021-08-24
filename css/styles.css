@@ -499,13 +499,13 @@ p.works__label {
   font-style: normal;
 }
 
-.footer-set {
+.footer-list {
   display: flex;
   margin: 0;
   margin-top: 20px;
 }
 
-.footer__item:not(:last-child) {
+.footer-list__item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -513,7 +513,7 @@ p.works__label {
   margin-right: 10px;
 }
 
-.footer__link {
+.footer-list__link {
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -523,31 +523,10 @@ p.works__label {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__link:hover,
-.footer__link:focus {
+.footer-list__link:hover,
+.footer-list__link:focus {
   background-color: var(--accent-color);
   fill: #ffffff;
-}
-
-/* modal */
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.close-icon {
-  width: 30px;
-  height: 30px;
-}
-
-.close-window:hover,
-.close-window:focus {
-  fill: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Portfolio */
@@ -745,62 +724,8 @@ a {
   background-color: #188ce8;
 }
 
-.button.button-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .logo-icon {
   margin-left: 10px;
-}
-
-.write {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* backdrop */
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: inherit;
-}
-
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.1);
-}
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.close-icon {
-  width: 30px;
-  height: 30px;
-}
-
-.close-window:hover,
-.close-window:focus {
-  fill: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Portfolio */
@@ -998,20 +923,8 @@ a {
   background-color: #188ce8;
 }
 
-.button.button-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .logo-icon {
   margin-left: 10px;
-}
-
-.write {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* backdrop */
@@ -1059,11 +972,19 @@ a {
   position: absolute;
   top: 8px;
   right: 8px;
+  width: 30px;
+  height: 30px;
   padding: 6px;
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-window:hover,
+.close-window:focus {
+  fill: var(--accent-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
