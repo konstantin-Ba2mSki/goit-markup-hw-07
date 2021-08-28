@@ -2,16 +2,16 @@
   padding-top: 94px;
   padding-bottom: 94px;
 
-  &--box {
+  &--background {
     background-color: $bg-color;
   }
 }
 
-.work__section {
+.section--nopaddingtop {
   padding-top: 0;
 }
 
-.work__title {
+.section__title {
   color: $title-text-color;
   font-size: 36px;
   font-weight: 700;

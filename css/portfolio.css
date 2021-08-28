@@ -34,7 +34,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo-img {
+.logo-label {
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -46,7 +46,7 @@ body {
   margin-right: 93px;
 }
 
-.logo-web {
+.logo-label__text {
   color: #2196f3;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -60,21 +60,21 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-}
-
-.container--page__header {
+.container__page-header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
 }
 
 .main-nav {
@@ -86,6 +86,7 @@ body {
           align-items: center;
 }
 
+/* navbar */
 .site-nav {
   padding-left: 0;
   display: -webkit-box;
@@ -93,7 +94,7 @@ body {
   display: flex;
 }
 
-.site-nav__item {
+.site-nav .site-nav__item {
   margin-right: 50px;
 }
 
@@ -102,7 +103,7 @@ body {
 }
 
 .site-nav__link {
-  color: #212121;
+  color: #757575;
   font-weight: 500;
   line-height: 1.1;
   padding-top: 32px;
@@ -132,11 +133,11 @@ body {
   color: #2196f3;
 }
 
-.site-nav__link.current {
+.site-nav__link--current {
   color: #2196f3;
 }
 
-.site-nav__link.current::after {
+.site-nav__link--current::after {
   opacity: 1;
 }
 
@@ -264,7 +265,7 @@ body {
   list-style: none;
 }
 
-.card-content {
+.gallary__wrapper {
   background: #ffffff;
   border: 1px solid #eeeeee;
   padding: 20px 24px 20px 24px;
@@ -276,7 +277,7 @@ body {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.card__title {
+.gallary__title {
   color: #212121;
   font-style: normal;
   font-weight: 700;
@@ -285,24 +286,24 @@ body {
   letter-spacing: 0.06em;
 }
 
-.card__text {
+.gallary__text {
   color: #757575;
   font-size: 16px;
   margin-top: 4px;
   line-height: 1.8;
 }
 
-.gallery__link:hover .product-text,
-.gallery__link:focus .product-text {
+.gallery__link:hover .gallary__overlay-text,
+.gallery__link:focus .gallary__overlay-text {
   opacity: 1;
 }
 
-.product-thumb {
+.gallary__box {
   position: relative;
   overflow: hidden;
 }
 
-.product-thumb::before {
+.gallary__box::before {
   position: absolute;
   content: '';
   width: 100%;
@@ -316,11 +317,11 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product-thumb:hover::before {
+.gallary__box:hover::before {
   opacity: 1;
 }
 
-.product-text {
+.gallary__overlay-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -337,9 +338,9 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gallery__link:hover .product-text,
-.gallery__link:focus .product-text,
-.gallery__link:focus .product-thumb::before {
+.gallery__link:hover .gallary__overlay-text,
+.gallery__link:focus .gallary__overlay-text,
+.gallery__link:focus .gallary__box::before {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
